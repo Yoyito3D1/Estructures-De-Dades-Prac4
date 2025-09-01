@@ -1,20 +1,58 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/e6Mx56Yq)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10852756&assignment_repo_type=AssignmentRepo)
-# Activitat 4: Implementació d'una Multillista genèrica
+# 🎬 Activity 4: Generic MultiList Implementation 
 
-*Aquesta activitat és obligatòria i comptarà un 10% de la nota de pràctiques de l'avaluació contínua*
+## 📋 Project Description
+This activity focuses on implementing a **generic MultiList** that maintains **relationships between two groups of elements**.  
+It is mandatory and counts for 10% of the continuous assessment grade.  
 
-En aquesta activitat haureu de programar una multillista genèrica (MultiLlista.java) que compleixi amb les funcions descrites a l'interfície MultiLlistaGenerica i que permeti guardar relacions entre dos grups d'elements. Aquesta classe estara composada per 2 taules hash, una pels elements del conjunt A y una pels elements del conjunt B, més tots els métodes necessaris per a afegir, esborrar, consultar, llistar relacions.
+The MultiList is composed of **two hash tables**, one for elements of set A and one for elements of set B, along with all the necessary methods to **add, delete, query, and list relationships** between the two sets.
 
-Les tasques que heu de realitzar son les següents:
+---
 
-- Programar la classe MultiLlista que implementa l'interfície MultiLlistaGenerica. Aquesta classe a de ser capaç de guardar les dades del conjunt A i del conjunt B fent servir una taula hash per cada conjunt.
+## 🚀 Main Features
+- Implement `MultiLlista` class according to the `MultiLlistaGenerica` interface.  
+- Store elements of **set A** and **set B** using separate hash tables (from Activity 3).  
+- Maintain references and relationships between elements of set A and set B.  
+- Add new relationships between elements.  
+- Delete existing relationships.  
+- Query and list all relationships efficiently.  
+- Dynamic implementation using **nodes** for the multi-list structure.  
+- Iterable functionality to traverse relationships.  
 
-- Programar la classe o classes que mantingui les referéncies de les dades i els métodes/atributs per tal de guardar la relació.
+---
 
-A tenir en compte:
-- Cal implementar la multillista utilitzant una implementació dinàmica basada en nodes i amb l'estructura vista a classe, on es mostra el funcionament de la inserció i de l'esborrat.
+## 🛠️ Code Structure
+- **MultiLlista.java**: Main class implementing the generic multi-list.  
+- **MultiLlistaGenerica.java**: Interface defining all required multi-list operations.  
+- **Node classes**: Internal classes to manage relationships and references between elements of set A and B.  
+- Uses the **hash table implementation** from Activity 3 to store elements of sets A and B efficiently.  
 
-- Per tal de guardar la informació dels dos conjunts a dins de la multillista (A i B), cal fer servir l'estructura de Taula de Hashing de l'activitat anterior. Es recomana que, com a clau, feu servir la clau de l'objecte A o B i per valor l'access a la multillista.
+**Key Methods:**
+- `afegir(A a, B b)`: Add a relationship between elements of sets A and B.  
+- `esborrar(A a, B b)`: Delete a specific relationship.  
+- `consultar(A a, B b)`: Check if a relationship exists.  
+- `llistarRelacionsA(A a)`: List all B elements related to A.  
+- `llistarRelacionsB(B b)`: List all A elements related to B.  
+- `iterable()`: Iterate over all relationships.  
 
-IMPORTANT: No es poden fer servir les classes de java.util.xxxx a no ser que s'indiqui especificament que es pot fer servir dins d'algun mètode o classe.
+---
+
+## 📋 Usage
+1. Implement `MultiLlista` and `MultiLlistaGenerica`.  
+2. Use hash tables from Activity 3 to store elements of sets A and B.  
+3. Use the provided methods to add, delete, query, and list relationships.  
+4. Iterate over the multi-list using the iterable interface.  
+
+> Note: You cannot use `java.util` classes unless explicitly allowed.  
+
+---
+
+## 💻 Requirements
+- Java JDK 8 or higher.  
+- Custom classes: `MultiLlista`, `MultiLlistaGenerica`, internal node classes, and hash table from Activity 3.  
+- Dynamic node-based implementation for the multi-list.  
+- Unit tests to validate correct insertion, deletion, query, and traversal of relationships.  
+
+---
+
+## 🎯 Objective
+Understand and implement **generic multi-lists**, **relationships between sets**, **node-based dynamic structures**, and integration with **hash tables** for efficient storage and retrieval of data.
